@@ -131,9 +131,158 @@
 
 .hero-btn3:hover{
   background-color: rgba(11, 5, 179, 0.2);
+
+  /* note-section */
+  
+}
+.note-section{
+  padding: 50px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.note-section-container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.note-section h2{
+  font-size: 42px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.note-section-p{
+  font-size: 16px;
+  color: #64748b;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+
+.note-section-container{
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.note-card{
+      
+  max-width: 280px;
+  background: #ffffff;
+  padding: 35px 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
   
 }
 
+
+.icon{
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 18px;
+  background: #fee2e2;
+  color: #F95555;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.note-card h3{
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.note-card p{
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+
+.brain-section{
+  padding: 50px 20px;
+  background: #ffffff;
+}
+
+.brain-area{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+
+.brain-img{
+  display: flex;
+  justify-content: center;
+}
+
+.brain-img img{
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+}
+
+
+.brain-info{
+  flex: 1;
+}
+
+
+.brain-info-text{
+  max-width: 560px;
+}
+
+.brain-info-lable {
+  font-size: 12px;
+  font-weight: 600;
+  color: #22c55e;
+  letter-spacing: 1px;
+}
+
+.brain-info-tex h2{
+  font-size: 40px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 12px 0 18px;
+  line-height: 1.2;
+}
+
+.brain-info-desc{
+  font-size: 16px;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 26px;
+}
+
+/* checklist */
+.brain-info-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.brain-info-list li{
+  font-size: 15px;
+  color: #0f172a;
+  margin-bottom: 12px;
+  padding-left: 28px;
+  position: relative;
+}
+
+.brain-info-list li::before{
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #22c55e;
+  font-weight: bold;
+}
 
 
 
