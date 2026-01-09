@@ -2,6 +2,12 @@
  padding: 0;
  box-sizing: border-box;
 }
+    
+.open-sans{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
 .nav-area{
     max-width: 1600px;
     background-color: #FFFFFF;
@@ -34,122 +40,102 @@
     background-color: #469165;
     color: #FFFFFF;
     border-radius: 4px;
-    padding: 14px;
+    padding: 12px 18px;
 }
 .btn-nav:hover{
     background-color: blue;
 }
-/* .hero{
-      max-width: 1600px;
-      height: auto;
-      background-image: url(assets/hero-bg.png);
-      background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-      background: rgba(0,0,0,0.5); 
-      z-index: 1;
+.hero{
+   position: relative;
+   width: 100%;
+   height: 100vh; 
+   background-image: url('assets/hero-bg.png'); 
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
+
+
 .hero-info{
-    max-width: 1360px;
-    height: auto;
-  justify-content: center;
-  align-items: center;
-  margin: 10px auto;
-  
-    
-
-} */
- hero {
   position: relative;
-  height: 600px; /* height adjust করা যাবে */
-  background-image: url(assets/hero-bg.png); /* screenshot background হিসেবে */
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
+  max-width: 1600xpx;
   text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   padding: 0 20px;
-  overflow: hidden;
+  z-index: 2;
 }
 
-/* Overlay */
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.5); /* Dark overlay */
-  z-index: 1;
-}
-
-/* Hero Content */
-.hero-info {
-  position: relative;
-  z-index: 2; /* overlay এর উপরে রাখতে */
-  max-width: 800px;
-}
-
-/* Top button */
-.hero-btn {
-  background-color: #ffffff;
-  color: #2c7a7b; /* হালকা সবুজ/blue shade */
-  border: none;
-  padding: 8px 16px;
-  border-radius: 20px;
+ .hero-btn1 {
+  display: inline-block;
+  background: #e5f4e3;
+  color: #22c55e;
   font-size: 14px;
-  margin-bottom: 20px;
-  cursor: pointer;
+  font-weight: 500;
+  padding: 5px 10px; 
+  border-radius: 4px;
+  width: auto;
+  margin: 0 auto;
+   border-radius: 20px;
 }
 
-/* Hero Title */
-.hero-title {
+
+.hero-info h1{
   font-size: 48px;
   font-weight: 700;
-  margin-bottom: 15px;
+  line-height: 1.2;
 }
 
-.hero-title2 {
-  color: #38a169; /* green color like in screenshot */
+.hero-info h1 .title-color{
+  color: #22c55e; 
 }
 
-/* Paragraph */
-.hero-p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 30px;
-  color: #e0e0e0;
-}
-
-/* Bottom Buttons */
-.hero-btn2,
-.hero-btn3 {
-  padding: 12px 24px;
+.hero-info p{
   font-size: 16px;
-  border-radius: 8px;
-  border: none;
-  margin: 5px;
-  cursor: pointer;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-.hero-btn2 {
-  background-color: #38a169; /* green */
+
+.hero-btn2{
+  background-color: #22c55e;
   color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  margin: 0 10px;
 }
 
-.hero-btn3 {
-  background-color: rgba(255,255,255,0.2); /* transparent white */
-  color: white;
-}
-
-.hero-btn3:hover {
-  background-color: rgba(255,255,255,0.4);
-}
-
+.hero-btn2:hover{
+  background-color: #9b10dc;
   
+}
+
+.hero-btn3{
+  background-color: rgba(255,255,255,0.1);
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  border: 1px solid white;
+   margin: 0 10px;
+}
+
+.hero-btn3:hover{
+  background-color: rgba(11, 5, 179, 0.2);
+  
+}
+
+
+
 
 
 
